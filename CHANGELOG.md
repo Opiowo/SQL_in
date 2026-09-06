@@ -4,6 +4,10 @@ All notable changes to the "sql-in" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.1]
+
+- Replaced the demo images with original diagrams (the previous ones were screen recordings from the upstream author)
+
 ## [1.0.0]
 
 - First Marketplace release, published as `keshu`
