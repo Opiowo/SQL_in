@@ -1,7 +1,7 @@
 {
   "name": "sql-in",
   "displayName": "SQL IN() Formatter",
-  "description": "Turn a list of values, one per line, into a SQL IN() statement — with configurable trimming, empty-line skipping, and de-duplication.",
+  "description": "Turn a list of values, one per line, into a SQL IN() clause or a TSQL VALUES() statement — with configurable trimming, empty-line skipping, and de-duplication.",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.72.0"
@@ -22,7 +22,8 @@
     "theme": "dark"
   },
   "activationEvents": [
-    "onCommand:sql-in.sqlin"
+    "onCommand:sql-in.sqlin",
+    "onCommand:sql-in.values"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -30,6 +31,10 @@
       {
         "command": "sql-in.sqlin",
         "title": "SQL IN() Statement"
+      },
+      {
+        "command": "sql-in.values",
+        "title": "SQL VALUES() Statement"
       }
     ],
     "configuration": {
@@ -49,6 +54,11 @@
           "type": "boolean",
           "default": false,
           "description": "Remove duplicate values, keeping the first occurrence."
+        },
+        "sqlIn.valuesDelimiter": {
+          "type": "string",
+          "default": "\t",
+          "description": "Delimiter used to split each line into columns for the SQL VALUES() Statement command. Defaults to a tab (as pasted from Excel); you can also enter \\t, \\n, \\r, or any custom string such as , or |."
         }
       }
     }
