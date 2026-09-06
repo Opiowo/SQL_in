@@ -2,14 +2,14 @@
   "name": "sql-in",
   "displayName": "SQL IN() Formatter",
   "description": "Turn a list of values, one per line, into a SQL IN() clause or a TSQL VALUES() statement — with configurable trimming, empty-line skipping, and de-duplication.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.72.0"
   },
   "author": {
-    "name": "Opiowo"
+    "name": "keshu"
   },
-  "publisher": "Opiowo",
+  "publisher": "keshu",
   "categories": [
     "Formatters"
   ],

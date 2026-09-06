@@ -1,5 +1,7 @@
 # SQL IN() Formatter
 
+> Based on [sql-in-statements](https://github.com/edwardpcharles/sql-in-statements) by Edward Charles (MIT licensed). This fork adds configurable trimming/dedup/empty-line handling, a "Double Single Quotes" style for `OPENQUERY`, and the `SQL VALUES() Statement` command.
+
 A VS Code extension with two commands for turning a pasted list of values into ready-to-use TSQL:
 
 - **SQL IN() Statement** — one value per line → a SQL `IN()` clause
