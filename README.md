@@ -18,11 +18,7 @@ A VS Code extension with two commands for turning a pasted list of values into r
    - `Without Quotes` — `(1,2)`
    - `Double Single Quotes` — `(''abc'',''def'')`, for use inside an `OPENQUERY` string literal
 
-### Creating an IN() Statement with Quotes
-![SQL IN Statement with Quotes](With_Quotes.gif)
-
-### Creating an IN() Statement without Quotes
-![SQL IN Statement without Quotes](Without_Quotes.gif)
+![SQL IN() Statement demo](in-clause-demo.png)
 
 ## SQL VALUES() Statement
 
@@ -59,6 +55,8 @@ values(
 ('C','3')
 )
 ```
+
+![SQL VALUES() Statement demo](values-demo.png)
 
 ## Settings
 
